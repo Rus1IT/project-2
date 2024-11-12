@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Slackey&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Slackey&display=swap" rel="stylesheet">
+    <title>Inredients</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="title">
+                    The Krusty Krabs
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="section__search">
+        <div class="container">
+            <div class="search__wrapper">
+                <form class="form-wrapper">
+                    <div class="search__form">
+                        <div>
+                            <input type="search" id="search" autocomplete="off" placeholder="Search for..." required>
+                            <ul class="suggestions"></ul>
+                        </div>
+                        <input type="submit" value="go" id="submit">
+                    </div>
+
+                    
+                    
+                    <div class="settings">
+                        <input type="number" id="calories" placeholder="Max Calories" min="0">
+                        
+                        <select id="cuisine">
+                            <option value="">All Cuisines</option>
+                            <option value="african">African</option>
+                            <option value="asian">Asian</option>
+                            <option value="american">American</option>
+                            <option value="british">British</option>
+                            <option value="cajun">Cajun</option>
+                            <option value="caribbean">Caribbean</option>
+                            <option value="chinese">Chinese</option>
+                            <option value="eastern european">Eastern European</option>
+                            <option value="european">European</option>
+                            <option value="french">French</option>
+                            <option value="german">German</option>
+                            <option value="greek">Greek</option>
+                            <option value="indian">Indian</option>
+                            <option value="irish">Irish</option>
+                            <option value="italian">Italian</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="jewish">Jewish</option>
+                            <option value="korean">Korean</option>
+                            <option value="latin american">Latin American</option>
+                            <option value="mediterranean">Mediterranean</option>
+                            <option value="mexican">Mexican</option>
+                            <option value="middle eastern">Middle Eastern</option>
+                            <option value="nordic">Nordic</option>
+                            <option value="southern">Southern</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="thai">Thai</option>
+                            <option value="vietnamese">Vietnamese</option>
+                        </select>
+    
+                        <input type="number" id="sugar" placeholder="Max Sugar (grams)" min="0">
+                        <input type="number" id="minFat" placeholder="Min Fat (grams)" min="0">
+                        <input type="number" id="minAlcohol" placeholder="Min Alcohol (grams)" min="0">
+                        <input type="number" id="maxReadyTime" placeholder="Max Ready Time (minutes)" min="0">
+
+                        <select id="diet">
+                            <option value="">Diet</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="foods">
+        <div class="container">
+            <div class="foods__wrapper">
+                <div class="food__list"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <script src="script/index.js"></script>
+</body>
+</html>

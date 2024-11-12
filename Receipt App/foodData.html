@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/foodData.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Slackey&display=swap" rel="stylesheet">
+  <title>About Food</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="title">
+                The Krusty Krabs
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+  <div class="container">
+      <div class="food__data">
+          <div class="food__data-left">
+              <div class="food__data-header">
+                <div class="favourite__icon">
+                  <img src="img/favourite-icon-black.svg" alt="Favourite Icon">
+                </div>
+                <div id="food__topics">
+                  <div></div>
+                </div>
+              </div>
+              
+              <div class="food__name" id="foodName">Loading...</div>
+              <div class="food__rating">
+                  <div class="food__rating-icon" id="foodRatingIcon">
+                  </div>
+                  <div class="food__rating-score" id="foodRatingScore"></div>
+              </div>
+              <div class="food__blocks">
+                  <div class="food__block">
+                      <div class="block__title">Healthy</div>
+                      <div class="block__time" id="prepTime"></div>
+                  </div>
+                  <div class="food__block">
+                      <div class="block__title">Cook</div>
+                      <div class="block__time" id="cookTime"></div>
+                  </div>
+                  <div class="food__block">
+                      <div class="block__title">Serving</div>
+                      <div class="block__time" id="totalTime"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="food__img">
+              <img src="" alt="Food Image" id="foodImage">
+          </div>
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+      <div id="summary">
+          
+      </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cooking">
+      <div class="methods">
+        <div class="title">
+          Methods
+        </div>
+        <div class="method" id="methodSteps"></div>
+      </div>
+      <div class="ingredients">
+        <div class="title">
+          Ingredients
+        </div>
+        <table id="ingredientsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Amount</th>
+              <th>Unit</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="script/foodData.js"></script>
+  
+</body>
+</html>

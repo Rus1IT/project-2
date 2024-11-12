@@ -1,0 +1,248 @@
+body {
+    background: #eee;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #333;
+    text-align: center;
+  }
+
+  .container{
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+
+  .header__wrapper{
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    background-color: #0483a0;
+    height: 100px;
+  }
+
+  .header__wrapper .logo img{
+    height: 100px;
+  }
+
+  .header__wrapper .title{
+    font-size: 60px;
+    font-family: "Slackey", sans-serif;
+    color: #c31d2e;
+    font-weight: 600;
+  }
+
+  .form-wrapper {
+    background-color: #f6f6f6;
+    border-color: #dedede #bababa #aaa #bababa;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 850px;  
+    padding: 20px;
+    background-color: #f8f9fa; 
+    border-bottom: 2px solid #e2e2e2;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center; 
+  }
+  
+  .form-wrapper .search__form{
+    display: flex;
+    gap: 20px;
+  }
+  .form-wrapper #search {
+    border: 1px solid #CCC;
+    box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+    border-radius: 3px;
+    color: #999;
+    float: left;
+    font: 22px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+    height: 40px;
+    padding: 10px;
+    width: 762px;
+  }
+  
+  .form-wrapper #search:focus {
+    border-color: #aaa;
+    box-shadow: 0 1px 1px #bbb inset;
+    outline: 0;
+  }
+  
+  .form-wrapper #submit {
+    background-color: #0483a0;
+    border: 1px solid #00748f;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+    color: #fafafa;
+    cursor: pointer;
+    height: 42px;
+    float: right;
+    font: 15px Arial, Helvetica;
+    padding: 0;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+    width: 100px;
+  }
+  
+  .form-wrapper #submit:hover,
+  .form-wrapper #submit:focus {
+    background-color: #31b2c3;
+  }
+  
+  .form-wrapper #submit:active {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    outline: 0;
+  }
+
+
+.form-wrapper {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form-wrapper 
+.suggestions {
+    top: 100%; 
+    left: 0;
+    width: calc(100% - 20px);
+    max-height: 200px; 
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #dedede; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    z-index: 10;
+    margin-top: 8px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.suggestions li {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333; 
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.suggestions li:hover {
+    background-color: #f1f1f1; 
+}
+
+.suggestions.hidden {
+    display: none;
+}
+
+.form-wrapper {
+    position: relative; 
+}
+
+
+.settings {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 15px; 
+  margin-top: 20px;
+  justify-content: center;
+  width: 100%; 
+}
+
+.settings input{
+  border: 3px;
+  border-radius: 12px;
+  border-width: 2px;
+  border-color: #000000;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center; 
+  margin-top: 10px; 
+  font-size: 21px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  margin-right: 10px; 
+  width: 20px; 
+  height: 20px; 
+}
+
+.food__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f4f8; 
+  border-radius: 12px;
+}
+
+.food__list .food {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.food__list .food .food__image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.food__list .food .food__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.food__list .food .food__image:hover img {
+  transform: scale(1.05); 
+}
+
+.food__list .food .food__name a {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.food__list .food .food__name a:hover {
+  color: #007bff; 
+}
+
+.food__list .food .food__description {
+  font-size: 18px;  
+  color: #666;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.food__list .food:hover {
+  background-color: #f3f7fb;
+  border-color: #ccc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+
+
