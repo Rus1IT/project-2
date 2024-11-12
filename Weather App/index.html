@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Slackey&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=37a75e60-4461-4c83-8d72-f3d43d3d737a&lang=ru_RU"></script>
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+                <div class="search-box">
+                    <div class="search">
+                        <input type="search" name="searcher" autocomplete="off" ="Enter the name of city to search">
+                    </div>
+                    <div class="button">   
+                        <button>Search</button>
+                    </div>
+                    <div class="suggestions"></div> 
+                </div>
+                <div class="title">
+                    Super Pogoda
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section>
+        <div class="container">
+            <div class="current__weather">
+                <div class="card">
+                    <div class="card__header">
+                        <div class="card__title">
+                            Lorem ipsum dolor  
+                        </div>
+                        <div class="function">
+                            <div class="card__symbol">
+                                °C
+                            </div>
+                            <div class="card__location">
+                                <img src="images/location.svg" alt="My-Location">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__data">
+                        <div class="card__data-temperature"> 
+                            <div class="card__degree">
+                                5
+                            </div>
+                            <div class="card__description">
+                                Lorem ipsum dolor sit
+                            </div>
+                        </div>
+                        <div class="card__range"> 
+                            Started by 8°C to 10°C
+                        </div>
+                    </div>
+                    
+                    <div class="card__image">
+                        <img src="https://openweathermap.org/img/wn/04d@4x.png" alt="Weather Icon">
+                    </div>
+
+                    <div class="optional">
+                        <div class="optional_left">
+                            <div class="option">
+                                Pressure
+                            </div>
+                            <div class="option">
+                                Humidity
+                            </div>
+                            <div class="option">
+                                Sea Level
+                            </div>
+                        </div>
+                        <div class="optional_right">
+                            <div class="option">
+                                Wind
+                            </div>
+                            <div class="option">
+                                Cloud
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <iframe></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__weak-weather">
+        <div class="container">
+            <div class="week_weather">
+                <div class="scroller">
+                    <div class="slider">
+                        <div class="weather-day">
+                            <div class="date"></div>
+                            <div class="image">
+                                <img src="" alt="weather icon">
+                            </div>
+                            <div class="temp"></div>
+                            <div class="temp__range"></div>
+                            <div class="description"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="scripts/index.js"></script>
+    
+</body>
+</html>
