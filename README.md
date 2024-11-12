@@ -1,4 +1,4 @@
-Receipt Weather and Movies App
+#Receipt Weather and Movies App
 Overview
 The Receipt Weather and Movies App is a web application that combines three main functionalities:
 
